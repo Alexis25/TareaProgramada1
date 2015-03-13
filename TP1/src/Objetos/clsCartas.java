@@ -5,11 +5,26 @@
  */
 package Objetos;
 
+
+import javax.swing.ImageIcon;
+
 /**
  *
  * @author User
  */
 public class clsCartas {
-    private int tipo;
+    private final String descripcion;
+    private final ImageIcon imagen;
+    
+    public clsCartas(String descripcion, ImageIcon imagen) {
+        this.descripcion = descripcion;
+        this.imagen = imagen;
+    }
+    public String getDescripcion() {
+        return descripcion;
+    }
+    public ImageIcon getImagen() {
+        return imagen;
+    }
     
 }
