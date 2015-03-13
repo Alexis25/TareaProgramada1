@@ -10,6 +10,7 @@ package Objetos;
  * @author Usuario
  */
 public class clsPropiedad {
-    String nombre;
-    int Precio;
+    String Starling;
+    String Sobreescribe;
+    String Correcto;
 }
