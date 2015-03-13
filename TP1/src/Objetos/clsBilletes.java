@@ -13,7 +13,6 @@ import javax.swing.ImageIcon;
  * @author User
  */
 public class clsBilletes {
-    private int kkk;
     private int monto;
     private final ImageIcon imagen;
 
