@@ -40,6 +40,5 @@ public class clsListaCircular {
             System.out.print( " <-> ");
             actual = actual.next;
         }
-        
     }
 }
