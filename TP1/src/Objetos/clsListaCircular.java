@@ -29,16 +29,28 @@ public class clsListaCircular {
             primerNodo= nuevo;
             size++;
         }
+        }
+
+    public clsNodo getPrimerNodo() {
+        return primerNodo;
+    }
+
+    public clsNodo getUltimoNodo() {
+        return ultimoNodo;
+    }
+    
+    public int getSize() {
+        return size;
     }
         
     void imprimirLista() {
         clsNodo actual = primerNodo;
         System.out.print("La lista actual es la siguiente \n");
         for (int index=0; index < size; index ++) {
-             System.out.print(actual.getData().toString());
+             System.out.println(actual.getData().toString());
 //            cout<< actual->back;
-            System.out.print( " <-> ");
             actual = actual.next;
         }
     }
+
 }

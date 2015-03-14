@@ -30,5 +30,9 @@ public class clsCartaCastigo {
 
     public boolean getTurno() {
         return turno;
-    }    
+    } 
+    @Override
+    public String toString() {
+        return "clsCartaCastigo{" + "pasos=" + pasos + ", dinero=" + dinero + ", turno=" + turno + '}';
+    }
 }

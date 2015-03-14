@@ -18,7 +18,7 @@ public class clsPropiedad {
     private final double alquilerHacienda;
     private final double alquilerHotel;
     private final ImageIcon imagenclsPropiedad;
-    private final String Dueño;
+    private String Dueño;
     private final String descripcion;
     
     public clsPropiedad(double valorCompra,int peage,double alquiler1Casa,double alquilerHacienda,double alquilerHotel,String Dueño, String descripcion,ImageIcon imagen){  
@@ -53,6 +53,10 @@ public class clsPropiedad {
 
     public double getAlquilerHotel() {
         return alquilerHotel;
+    }
+
+    public void setDueño(String Dueño) {
+        this.Dueño = Dueño;
     }
 
     public String getDueño() {

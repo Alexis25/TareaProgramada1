@@ -4,11 +4,6 @@
  * and open the template in the editor.
  */
 package Objetos;
-
-/**
- *
- * @author User
- */
 /**
  *
  * @author User
@@ -38,6 +33,21 @@ public class clsJugador {
     public void setDinero(double dinero) {
         this.dinero = dinero;
     }
+    
+
+    public void moverse(int pasos,clsListaCircular lista){
+//        for (int i=0; i<clsPropiedad.lenght;i++){
+//        clsListaCircular lista= new clsListaCircular();
+        clsNodo temporal= lista.getPrimerNodo();
+        System.out.print("inicio a moverse \n");
+        for (int index=0; index < pasos-1; index ++) {
+            temporal= temporal.next;
+        }
+        temporal.getData().setDueño(nombre);
+        
+        }
+    
+    
     
     
 }
