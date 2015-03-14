@@ -12,10 +12,12 @@ public class clsJugador {
     private final String nombre;
     private final clsFicha ficha;
     private double dinero=3000;
+    private int size=0;
 
     public clsJugador(String nombre, clsFicha ficha){
         this.nombre = nombre;
         this.ficha = ficha;
+        size++;
     }
 
     public String getNombre() {
@@ -41,9 +43,16 @@ public class clsJugador {
         for (int index=0; index < pasos-1; index ++) {
             temporal= temporal.next;
         }
-        temporal.getData().setDueño(nombre);
+        if (temporal.getData().getDueño()==null){
+            temporal.getData().setDueño(nombre);            
+        }else{
+            pagarPeaje(temporal.getData().getDueño());
         }
-    
+    }
+    public void pagarPeaje(String jugador){
+
+        
+    }
     
     
     
