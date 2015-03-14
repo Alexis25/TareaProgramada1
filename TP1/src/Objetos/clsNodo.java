@@ -14,8 +14,8 @@ public class clsNodo {
     public clsNodo next;
     public clsNodo back;
 
-//    public Nodo() {
-//    }
+    public clsNodo() {
+    }
 
     public clsNodo( clsPropiedad data, clsNodo next, clsNodo back) {
         this.data = data;
