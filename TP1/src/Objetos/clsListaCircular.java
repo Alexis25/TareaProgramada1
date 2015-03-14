@@ -27,6 +27,7 @@ public class clsListaCircular {
             clsNodo nuevo= new clsNodo(dato,primerNodo,null);         
             primerNodo.back=nuevo;
             primerNodo= nuevo;
+            ultimoNodo.next=primerNodo;
             size++;
         }
         }
