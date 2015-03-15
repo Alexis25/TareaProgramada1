@@ -28,5 +28,10 @@ public class clsNodoSimpleJugadores {
     public clsJugador getDato() {
         return dato;
     }
+
+    @Override
+    public String toString() {
+        return "clsNodoSimpleJugadores{" + "dato=" + dato.getNombre()+'}';
+    }
     
 }
