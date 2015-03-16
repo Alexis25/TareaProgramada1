@@ -31,6 +31,11 @@ public class clsListaSimpleJugadores {
         }
     }
 
+    public clsNodoSimpleJugadores getPrimerNodo() {
+        return primerNodo;
+    }
+    
+
     public int getSize() {
         return size;
     }

@@ -31,7 +31,7 @@ public class clsNodoSimpleJugadores {
 
     @Override
     public String toString() {
-        return "clsNodoSimpleJugadores{" + "dato=" + dato.getNombre()+'}';
+        return "clsNodoSimpleJugadores{" + "dato=" + dato.getNombre()+dato.getDinero()+'}';
     }
     
 }
